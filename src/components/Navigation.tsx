@@ -24,27 +24,32 @@ const Navigation = () => {
   // const isHomePage = location.pathname === '/';
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled 
-        ? 'bg-white/80 backdrop-blur-xl border-b border-white/20 shadow-lg' 
-        : 'bg-white/60 backdrop-blur-sm border-b border-white/10'
-    }`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? 'bg-white/80 backdrop-blur-xl border-b border-white/20 shadow-lg'
+          : 'bg-white/60 backdrop-blur-sm border-b border-white/10'
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <Link to="/" className="flex items-center gap-1 ml-3">
-              <span className="font-bold text-xl text-slate-900 tracking-tight">
-                Extrive Innovations
-              </span>
+        {/* allow height to grow on small screens */}
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-3 gap-3">
+          {/* Logo */}
+          <Link to="/" className="flex items-center gap-1 ml-1 sm:ml-3">
+            <span className="font-bold text-xl text-slate-900 tracking-tight">
+              Extrive Innovations
+            </span>
           </Link>
 
-          <div className="hidden md:flex space-x-8">
-            <Link 
+          {/* Menu – visible on ALL screen sizes, auto-wraps on small */}
+          <div className="flex flex-wrap justify-start sm:justify-end gap-x-4 gap-y-2 text-sm sm:text-base">
+            <Link
               to="/products"
               className="text-slate-600 hover:text-orange-500 transition-colors font-medium"
             >
               Products
             </Link>
-            <Link 
+            <Link
               to="/roi-calculator"
               className="text-slate-600 hover:text-orange-500 transition-colors font-medium"
             >
@@ -62,13 +67,13 @@ const Navigation = () => {
             >
               Login
             </Link> */}
-            <Link 
+            <Link
               to="/blog"
               className="text-slate-600 hover:text-orange-500 transition-colors font-medium"
             >
               Blog
             </Link>
-            <Link 
+            <Link
               to="/about"
               className="text-slate-600 hover:text-orange-500 transition-colors font-medium"
             >

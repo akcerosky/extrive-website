@@ -22,7 +22,7 @@ const defaultVideoTestimonials: VideoTestimonial[] = [
   {
     url: "/1.mp4",
     title: "Our Journey",
-    description: "See how BackEX reduced fatigue for Maruti's ground staff.",
+    description: "A glimpse into our journey from concept to real-world impact.",
     thumbnail: "/logo.svg",
   },
   {

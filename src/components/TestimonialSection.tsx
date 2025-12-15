@@ -15,7 +15,6 @@ type VideoTestimonial = {
   title: string;
   description: string;
   thumbnail: string;
-  label: string;
 };
 
 // --- Video Carousel ---
@@ -25,21 +24,18 @@ const defaultVideoTestimonials: VideoTestimonial[] = [
     title: "Our Journey",
     description: "See how BackEX reduced fatigue for Maruti's ground staff.",
     thumbnail: "/logo.svg",
-    label: "Maruti Pilot",
   },
   {
     url: "/2.mp4",
     title: "BackEX in Logistics",
     description: "Logistics teams share their experience with BackEX.",
     thumbnail: "/logo.svg",
-    label: "Logistics Team",
   },
   {
     url: "/3.mp4",
     title: "BackEX Pilot Testing",
     description: "110+ hours of pilot testing summarized.",
     thumbnail: "/logo.svg",
-    label: "Pilot Testing",
   },
 ];
 
@@ -73,9 +69,6 @@ const VideoTestimonialsCarousel: React.FC<{
           <div className="flex items-center space-x-3">
             <PlayCircle className="w-6 h-6 text-orange-400" />
             <span className="text-white font-semibold text-lg">{videos[videoIndex].title}</span>
-            <span className="ml-2 px-2 py-1 rounded bg-orange-100 text-orange-600 text-xs font-semibold">
-              {videos[videoIndex].label}
-            </span>
           </div>
           <p className="text-gray-200 text-sm mt-1">{videos[videoIndex].description}</p>
         </div>

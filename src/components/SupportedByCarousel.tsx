@@ -27,28 +27,7 @@ const SupportedByCarousel: React.FC = () => {
 
         {/* Carousel */}
         <div className="overflow-hidden">
-          <div className="flex gap-12 logo-scroll-track will-change-transform">
-            <style>
-  {`
-    .logo-scroll-track {
-      animation: logo-scroll 15s linear infinite;
-    }
-
-    /* Mobile: make it faster */
-    @media (max-width: 768px) {
-      .logo-scroll-track {
-        animation-duration: 10s;
-      }
-    }
-
-    @keyframes logo-scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-  `}
-</style>
-
-          >
+          <div className="logo-scroll-track flex w-max gap-12 will-change-transform">
             {allLogos.map((logo, idx) => (
               <div
                 key={idx}
@@ -65,12 +44,24 @@ const SupportedByCarousel: React.FC = () => {
         </div>
       </div>
 
-      {/* Keyframes for infinite scroll */}
+      {/* CSS */}
       <style>
         {`
+          .logo-scroll-track {
+            animation: logo-scroll 15s linear infinite;
+            transform: translate3d(0,0,0);
+          }
+
+          /* Mobile: faster */
+          @media (max-width: 768px) {
+            .logo-scroll-track {
+              animation-duration: 10s;
+            }
+          }
+
           @keyframes logo-scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            0% { transform: translate3d(0,0,0); }
+            100% { transform: translate3d(-50%,0,0); }
           }
         `}
       </style>

@@ -27,11 +27,27 @@ const SupportedByCarousel: React.FC = () => {
 
         {/* Carousel */}
         <div className="overflow-hidden">
-          <div
-            className="flex gap-12 animate-logo-scroll will-change-transform"
-            style={{
-              animation: "logo-scroll 15s linear infinite",
-            }}
+          <div className="flex gap-12 logo-scroll-track will-change-transform">
+            <style>
+  {`
+    .logo-scroll-track {
+      animation: logo-scroll 15s linear infinite;
+    }
+
+    /* Mobile: make it faster */
+    @media (max-width: 768px) {
+      .logo-scroll-track {
+        animation-duration: 10s;
+      }
+    }
+
+    @keyframes logo-scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  `}
+</style>
+
           >
             {allLogos.map((logo, idx) => (
               <div

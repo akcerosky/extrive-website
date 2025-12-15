@@ -29,7 +29,7 @@ const SupportedByCarousel: React.FC = () => {
             <div
               className="flex gap-12 animate-logo-scroll will-change-transform"
               style={{
-                animation: "logo-scroll 20s linear infinite",
+                animation: "logo-scroll 15s linear infinite",
               }}
             >
               {allLogos.map((logo, idx) => (

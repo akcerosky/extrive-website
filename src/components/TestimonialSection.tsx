@@ -22,24 +22,20 @@ type VideoTestimonial = {
 const defaultVideoTestimonials: VideoTestimonial[] = [
   {
     url: "/1.mp4",
-    title: "BackEX at Maruti Pilot",
-    description: "See how BackEX reduced fatigue for Maruti's ground staff.",
+    title: "Our Journey",
     thumbnail: "/logo.svg",
-    label: "Maruti Pilot",
   },
   {
     url: "/2.mp4",
     title: "BackEX in Logistics",
     description: "Logistics teams share their experience with BackEX.",
     thumbnail: "/logo.svg",
-    label: "Logistics Team",
   },
   {
     url: "/3.mp4",
     title: "BackEX Pilot Testing",
     description: "110+ hours of pilot testing summarized.",
     thumbnail: "/logo.svg",
-    label: "Pilot Testing",
   },
 ];
 

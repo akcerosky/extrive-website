@@ -28,12 +28,21 @@ const HeroSection = () => {
       <div className="absolute inset-0 overflow-hidden">
         {/* Floating Geometric Shapes */}
         <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-orange-200/30 to-blue-200/30 rounded-full floating-element blur-xl"></div>
-        <div className="absolute top-40 right-20 w-24 h-24 bg-gradient-to-br from-blue-200/30 to-orange-200/30 rounded-full floating-element blur-xl" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute bottom-40 left-20 w-40 h-40 bg-gradient-to-br from-orange-100/40 to-blue-100/40 rounded-full floating-element blur-2xl" style={{ animationDelay: '4s' }}></div>
+        <div
+          className="absolute top-40 right-20 w-24 h-24 bg-gradient-to-br from-blue-200/30 to-orange-200/30 rounded-full floating-element blur-xl"
+          style={{ animationDelay: '2s' }}
+        ></div>
+        <div
+          className="absolute bottom-40 left-20 w-40 h-40 bg-gradient-to-br from-orange-100/40 to-blue-100/40 rounded-full floating-element blur-2xl"
+          style={{ animationDelay: '4s' }}
+        ></div>
 
         {/* Holographic Panels */}
         <div className="absolute top-0 right-0 w-96 h-96 holographic-panel blur-3xl opacity-40 mesh-background"></div>
-        <div className="absolute bottom-0 left-0 w-80 h-80 holographic-panel blur-3xl opacity-30 mesh-background" style={{ animationDelay: '3s' }}></div>
+        <div
+          className="absolute bottom-0 left-0 w-80 h-80 holographic-panel blur-3xl opacity-30 mesh-background"
+          style={{ animationDelay: '3s' }}
+        ></div>
 
         {/* Animated Grid Lines */}
         <div className="absolute inset-0 opacity-5">
@@ -53,26 +62,47 @@ const HeroSection = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             {/* Main Headline */}
-            <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-              <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold mb-8 leading-[1.05] tracking-tight font-space">
+            <div
+              className={`transition-all duration-1000 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
+            >
+              <h1
+                className="
+                  font-bold mb-8 tracking-tight font-space
+                  text-[clamp(2.4rem,9.5vw,3.6rem)] leading-[1.0]
+                  sm:text-7xl sm:leading-[1.05]
+                  lg:text-8xl lg:leading-[1.05]
+                  break-words
+                "
+              >
                 <span className="block text-slate-900 mb-2">
                   Empowering Motion.
                 </span>
-                <span className="block gradient-text typewriter-text inline-block">
+                <span className="block gradient-text typewriter-text whitespace-normal break-words">
                   Enhancing Lives.
                 </span>
               </h1>
             </div>
 
             {/* Subtext with delayed animation */}
-            <div className={`transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-              <p className="text-xl sm:text-2xl text-slate-600 mb-12 max-w-4xl mx-auto leading-relaxed font-medium tracking-wide">
+            <div
+              className={`transition-all duration-1000 delay-500 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
+            >
+              <p className="text-[clamp(1rem,4.5vw,1.25rem)] sm:text-2xl text-slate-600 mb-12 max-w-4xl mx-auto leading-relaxed font-medium tracking-wide">
                 Empowering industrial workers with wearable tech that reduces fatigue,
                 prevents injuries, and boosts productivity.
               </p>
             </div>
+
             {/* CTA Button with glow effect */}
-            <div className={`transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div
+              className={`transition-all duration-1000 delay-700 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
+            >
               <button
                 onClick={scrollToDemo}
                 className="group relative inline-flex items-center px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 bg-gradient-to-r from-orange-400 via-black to-orange-500 text-white shadow-lg hover:scale-105 overflow-hidden"
@@ -83,7 +113,11 @@ const HeroSection = () => {
             </div>
 
             {/* Glass Panel with Stats */}
-            <div className={`mt-16 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div
+              className={`mt-16 transition-all duration-1000 delay-1000 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
+            >
               <div className="glass-panel rounded-3xl p-8 max-w-4xl mx-auto backdrop-blur-xl">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                   <div className="floating-element">

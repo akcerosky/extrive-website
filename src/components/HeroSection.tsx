@@ -79,7 +79,7 @@ const HeroSection = () => {
                 <span className="block text-slate-900 mb-2">
                   Empowering Motion.
                 </span>
-                <span className="block gradient-text whitespace-normal break-words text-center md:typewriter-text">
+                <span className="block gradient-text whitespace-normal break-words md:typewriter-text">
                   Enhancing Lives.
                 </span>
               </h1>

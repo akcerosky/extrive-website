@@ -14,7 +14,7 @@ const SupportedByCarousel: React.FC = () => {
   const allLogos = [...logos, ...logos];
 
   return (
-    <section className="relative py-16 bg-gradient-to-b from-black via-slate-900 to-black overflow-hidden">
+    <section className="relative py-16 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
       {/* Decorative blurred glow */}
       <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[180px] bg-gradient-to-r from-orange-400 via-orange-600 to-orange-400 opacity-30 blur-3xl pointer-events-none z-0" />
       <div className="relative z-10 max-w-6xl mx-auto px-4">
@@ -29,7 +29,7 @@ const SupportedByCarousel: React.FC = () => {
             <div
               className="flex gap-12 animate-logo-scroll will-change-transform"
               style={{
-                animation: "logo-scroll 28s linear infinite",
+                animation: "logo-scroll 20s linear infinite",
               }}
             >
               {allLogos.map((logo, idx) => (
@@ -52,8 +52,8 @@ const SupportedByCarousel: React.FC = () => {
             </div>
           </div>
           {/* Gradient fade edges */}
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-black via-black/70 to-transparent z-20" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-black via-black/70 to-transparent z-20" />
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-slate-900 via-slate-900/70 to-transparent z-20" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-slate-900 via-slate-900/70 to-transparent z-20" />
         </div>
       </div>
       {/* Keyframes for infinite scroll */}

@@ -67,19 +67,11 @@ const HeroSection = () => {
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
-              <h1
-                className="
-                  font-bold mb-8 tracking-tight font-space
-                  text-[clamp(2.4rem,9.5vw,3.6rem)] leading-[1.0]
-                  sm:text-7xl sm:leading-[1.05]
-                  lg:text-8xl lg:leading-[1.05]
-                  break-words
-                "
-              >
+              <h1 className="text-[clamp(2.75rem,10vw,3.75rem)] sm:text-7xl lg:text-8xl font-bold mb-8 leading-[1.05] tracking-tight font-space">
                 <span className="block text-slate-900 mb-2">
                   Empowering Motion.
                 </span>
-                <span className="block gradient-text whitespace-normal break-words md:typewriter-text">
+                <span className="block gradient-text typewriter-text inline-block max-w-full">
                   Enhancing Lives.
                 </span>
               </h1>
